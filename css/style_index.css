@@ -274,34 +274,44 @@ p,button
 
         
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 500px)
 {
   header
   {
     
     background-position: center;
-    background-size: contain;
-    height: 50vh;
+    background-size: cover;
+    height: 25vh;
   }
-  header h4
+  .background-img
+  {
+    padding-top: 10%;
+    padding: 0;
+    margin-top: 20%;
+  }
+  .background-img .mb-5
+  {
+    margin-bottom: 0 !important;
+  }
+  .background-img .me-5 , .pe-5
+  {
+    margin-right: 0 !important;
+    padding-right: 1% !important;
+  }
+  .background-img h4
 {
+  
   font-size: 15px;
-}
-.main-title
-{
-  width: 80px;
 }
   footer
   {
     margin-top:3px;
   }
-  @keyframes moveRight {
-  
-    to {
-      
-      right: 15%;
-    }
-}
+  .moving-element2 , .moving-element {
+    
+    display: none;
+    
+  }
 }
   /* footer================= */
 footer
