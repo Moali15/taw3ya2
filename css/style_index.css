@@ -229,7 +229,7 @@ p,button
 {
     overflow: hidden;
     white-space: nowrap;
-    animation: control-width 4s linear alternate;
+    animation: control-width 3s linear alternate;
     
     
 }
@@ -256,7 +256,7 @@ p,button
   
   right:  90%;
   animation: moveRight 1s linear  forwards ; 
-  animation-delay: 4s; 
+  animation-delay: 2.5s; 
 }
 .moving-element2 {
   width: auto;
@@ -265,7 +265,7 @@ p,button
   
   right:  90%;
   animation: moveRight 1s linear  forwards ; 
-  animation-delay: 4.6s; 
+  animation-delay: 3.1s; 
 }
   @keyframes moveRight {
   
