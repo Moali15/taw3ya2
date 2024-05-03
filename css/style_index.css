@@ -233,7 +233,9 @@ p,button
     
     
 }
-
+.background-img .headbut .btn
+{
+}
 @keyframes control-width {
   from  {
     width: 0;
@@ -305,6 +307,7 @@ p,button
     margin-right: 0 !important;
     padding-right: 1% !important;
   }
+
   .background-img h4
 {
   
