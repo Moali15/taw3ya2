@@ -277,7 +277,7 @@ p,button
 {
   .headbut button
   {
-    
+
     display: none;
   }    
 }
@@ -298,7 +298,7 @@ p,button
   }
   .background-img .mb-5
   {
-    margin-bottom: 0 !important;
+    margin-bottom: 20px !important;
   }
   .background-img .me-5 , .pe-5
   {
