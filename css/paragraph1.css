@@ -7,9 +7,6 @@
 body
 {
     direction: rtl;
-    -webkit-box-shadow: 0 0 10px #ddd;
-    -moz-box-shadow: 0 0 10px #ddd;
-    box-shadow: 0 0 10px #ddd;
 }
 a
 {
@@ -19,10 +16,9 @@ a
 :root
 {
     --main-color:#294B29;
-    --body-color : #99c5b5;
-    --dark : #706c61;
-    --light : #afece7;
-    --between : #899e8b;
+    --body-color : #789461;
+    --dark : #50623A;
+    --light : #DBE7C9;
     --main-font :   "IBM Plex Sans Arabic", sans-serif;
     --topic-font :  "Noto Sans Arabic", sans-serif;
 
@@ -34,16 +30,6 @@ ul {
     padding: 0;
 }
 
-.background-img 
-{
-    width: 100%;
-    height: 100vh;
-    background-image: url(../images/test.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 h1 ,h2 ,h3,a
 {
     font-family: var(--main-font) 
@@ -53,6 +39,11 @@ p,button
     font-family:  var(--topic-font);
 }
 
+
+
+/* =================== */
+
+/* ==================== */
 /* Start Header */
 .header {
     background-color: white;
@@ -133,84 +124,113 @@ p,button
   .header .main-nav > li > a:hover::before {
     left: 0;
   }
-
-.one 
+/* ================== */
+.one
 {
-    padding: 2%;
-    background-color: var(--body-color);
-    color: #000;
-    position: relative;
-  overflow: hidden;
-    
+    margin-bottom: 10%;
+}
+.one h2 ,.one h1
+{
+    color: var(--main-color);
+}
+.one p
+{
+    color: var(--body-color);
 }
 
-.one video,h2
-{
+/* ================== */
+/* Start Work Steps */
+.work-steps {
+  padding-top: var(--main-padding-top);
+  padding-bottom: var(--main-padding-bottom);
   position: relative;
-  z-index: 999;
+  background-color: var(--section-background);
 }
-.one::after
-{
-content: "";
-  width: 165%;
-  height: 80%;
-  background-color: #fff;
-    position: absolute;
-    left: 0px;
-    
-    bottom: 38%;
-    rotate: 22deg;
-  
+.work-steps .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-/* ========================== */
-.two
-{
-    padding: 2%;
-    background-color: #F7E1AE;
-    color:#000 ;
-    position: relative;
-    overflow: hidden;
-    
+@media (max-width: 991px) {
+  .work-steps .container {
+    flex-direction: column;
+  }
 }
-.two video,h2
-{
+.work-steps .image {
+  max-width: 100%;
+  margin-right: 100px;
+}
+@media (max-width: 991px) {
+  .work-steps .image {
+    margin: 0 0 50px;
+  }
+}
+.work-steps .info .box {
+  background-color: #f6f5f5;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  border: 2px solid white;
   position: relative;
-  z-index: 999;
+  z-index: 1;
 }
-.two::after
-{
+@media (max-width: 767px) {
+  .work-steps .info .box {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.work-steps .info .box::before {
   content: "";
-  width: 155%;
-  height: 80%;
-  background-color: #fff;
-    position: absolute;
-
-    right: 0;
-    top: -22%;
-    rotate: -22deg;
-  
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  background-color: #ededed;
+  z-index: -1;
+  transition: var(--main-transition);
 }
-
-@keyframes example {
-  0%  {transform: scale(1);}
-  50%   {transform: scale(1.0999);}
-  100%   {transform: scale(1);}
+.work-steps .info .box:hover::before {
+  width: 100%;
+  height: 100%;
 }
-
+.work-steps .info .box img {
+  width: 64px;
+  margin-right: 30px;
+}
+@media (max-width: 767px) {
+  .work-steps .info .box img {
+    margin: 0 0 30px;
+  }
+}
+.work-steps .info .box h3 {
+  margin: 0;
+  font-size: 22px;
+}
+.work-steps .info .box p {
+  color: #777;
+  line-height: 1.7;
+  margin: 10px 0 0;
+  font-size: 18px;
+}
+/* End Work Steps */
 /* footer================= */
 footer
 {
-    background-color: var(--dark);
+    background-color: #000;
     
 }
 footer p
 {
-    color: var(--light);
+    color: var(--body-color);
 }
 footer h2
 {
-    color: var(--main-color);
+    color: var(--light);
 }
 footer .fa-facebook:hover
 {
@@ -235,6 +255,7 @@ footer .fa-snapchat:hover
 footer .form-control
 {
   background-color: #fff;
+  border:black solid 2px ;
   border-radius: 5px;
 }
 footer .form-control::placeholder
