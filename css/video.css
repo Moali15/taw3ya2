@@ -123,7 +123,7 @@ p,button
     height: 4px;
     background-color: var(--main-color);
     top: 0;
-    left: -100%;
+    left: -101%;
     transition: var(--main-transition);
   }
   .header .main-nav > li > a:hover {
