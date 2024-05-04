@@ -8,7 +8,6 @@
 }
 body
 {
-  direction: rtl;
   background-color: #eee;
     
 }
@@ -61,6 +60,7 @@ p,button
     -webkit-box-shadow: 0 0 10px #ddd;
     -moz-box-shadow: 0 0 10px #ddd;
     box-shadow: 0 0 10px #ddd;
+    direction: rtl;
   }
   .header .container {
     display: flex;
@@ -157,16 +157,19 @@ section .main .main-video
   background: #fff;
   border-radius: 5px;
   padding: 10px;
+  
 }
 section .main .main-video video{
   width: 100%;
   border-radius: 5px;
+  
 }
 section .main .main-video .title{
   color: #333;
   font-size: 23px;
   padding-top: 15px;
   padding-bottom: 15px;
+  direction: rtl;
 }
 section .main .video-list
 {
@@ -174,6 +177,7 @@ section .main .video-list
   border-radius: 5px;
   height: 520px;
   overflow: scroll;
+  direction: rtl;
 }
 .main .video-list::-webkit-scrollbar{
   width: 7px;
