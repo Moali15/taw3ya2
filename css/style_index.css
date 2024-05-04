@@ -328,10 +328,10 @@ p,button
 {
   header
   {
-    
+    margin-top: 100px;
     background-position: center;
     background-size: cover;
-    height: 25vh;
+    height: 35vh;
   }
   .background-img
   {
@@ -356,6 +356,8 @@ p,button
   footer
   {
     margin-top:3px;
+    position: absolute;
+    bottom: 0;
   }
 }
   
