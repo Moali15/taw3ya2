@@ -255,11 +255,11 @@ footer
 }
 footer p
 {
-    color: var(--body-color);
+    color: #FFF;
 }
 footer h2
 {
-    color: var(--light);
+    color: #FFF;
 }
 footer .fa-facebook:hover
 {
