@@ -21,7 +21,7 @@ a
     --light : #DBE7C9;
     --main-font :   "IBM Plex Sans Arabic", sans-serif;
     --topic-font :  "Noto Sans Arabic", sans-serif;
-
+    --main-transition: 0.3s;
 }
 
 ul {

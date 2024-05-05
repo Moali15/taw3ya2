@@ -25,7 +25,7 @@ a
     --between : #899e8b;
     --main-font :   "IBM Plex Sans Arabic", sans-serif;
     --topic-font :  "Noto Sans Arabic", sans-serif;
-
+    --main-transition: 0.3s;
 }
 
 ul {
@@ -245,7 +245,7 @@ section .main .video-list
 footer
 {
     background-color: #000;
-    
+    direction: rtl;
 }
 footer p
 {
